@@ -1,5 +1,6 @@
 require('dotenv').config();
-const app = require('./lib/app');
+const express = require('express');
+const app = express();
 const http = require('http');
 const cron = require('./lib/cron')();
 const port = process.env.PORT || 3003;
